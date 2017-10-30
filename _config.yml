@@ -25,8 +25,8 @@ author: Curt White
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://childmind.org'
-baseurl: '/feeling-responsive'
+url: 'https://curtpw.github.io'
+baseurl: '/cmi-innotech-website'
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
