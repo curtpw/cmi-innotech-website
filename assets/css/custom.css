@@ -238,8 +238,7 @@ html body .list__term-heading {
     padding: 15px 0 15px;
     height: 60px;
 }
-.top-bar-section li a:before,
-.top-bar-section li a:after {
+.top-bar-section li a:before, .top-bar-section li a:after {
     content: '';
     display: block;
     position: absolute;
@@ -256,7 +255,10 @@ html body .list__term-heading {
 }
 .top-bar-section li a:after {
     width: 0;
-    background: #000
+    background: #FFF;
+}
+.top-bar-section li a:active:after, .top-bar-section li a:hover:after {
+    width: 100%;
 }
 
 
