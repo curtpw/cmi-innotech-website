@@ -75,22 +75,21 @@
 	<div class="row">
 
 <!-- CRUDE INSERT OF ROYGBIV -->
-<div id="nav-brain">
-		<div id="ng-app-navigator" ng-app="navigator" ng-controller="NavigateController" ng-strict-di>
+		<div id="nav-brain">
+			<div id="ng-app-navigator" ng-app="navigator" ng-controller="NavigateController" ng-strict-di>
 
-		<!--	<div id="header_n_label"> -->
-
-				
+			<div id="header_n_label"> 
 				<div id="nav_label">
-					ROYGBIV<br/>
-					Shift+click on a label to see stats<br/>
+					ROYGBIV
+					<br/>
+					Shift+click on a label to see stats
+					<br/>
 					Selected Label: {{selectedLabel}}
 				</div>
-		<!--		<div id="plot-canvas" style="width: 400px; height: 300px;"> </div> -->
-				
-		<!--	</div> -->
+				<div id="plot-canvas" style="width: 0px; height: 0px;"> </div> 
+			</div> 
 
-		</div>
+			</div>
 
 		
 		</div>
@@ -109,12 +108,13 @@
                         } else {
                             	/* selected: add label, do plot. */
                             $scope.selectedLabel = mesh.name;
-                          		/*  do_boxplot("plot-canvas", mesh); */
+                            console.log("label in angular module: " + mesh.name);
+                          	do_boxplot("plot-canvas", mesh); 
                         }
                         $scope.$apply();
                     },
                     manifest_url: 'assets/data/lh_files_to_load.json',
-                    label_mapper: "assets/data/labels.json"
+                    label_mapper: 'assets/data/labels.json'
                 });
 			}]);
 		</script>
