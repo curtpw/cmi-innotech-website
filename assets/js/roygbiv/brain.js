@@ -331,7 +331,7 @@ var Brain = function(kwargs) {
 	}
 
 	this.selectMeshByRandomBest = function() {  // CURT ADDED
-		var bestMeshes = ["1027","1020", "1019", "1003", "1018", "1024", "1022", "1031", "1030", "1015", "1008", "1009", "1011", "1012"];
+		var bestMeshes = ["1027", "1029", "1020", "1019", "1003", "1018", "1024", "1022", "1031", "1030", "1015", "1008", "1009", "1011", "1012"];
 		/* Returns a random mesh from select front */
 		console.log("in select by random best");
 		console.log("meshes obj: " + Object.values(_this.meshes) );

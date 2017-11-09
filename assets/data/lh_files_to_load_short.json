@@ -170,6 +170,7 @@
         "1022": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1022.vtk",
         "1024": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1024.vtk",
         "1027": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1027.vtk",
+        "1029": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1029.vtk",
         "1030": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1030.vtk",
         "1031": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1031.vtk"
     },
@@ -187,6 +188,7 @@
         "1022": "ctx-lh-postcentral",
         "1024": "ctx-lh-precentral",
         "1027": "ctx-lh-rostralmiddlefrontal",
+        "1029": "ctx-lh-superiorparietal",
         "1030": "ctx-lh-superiortemporal",
         "1031": "ctx-lh-supramarginal"
     }
