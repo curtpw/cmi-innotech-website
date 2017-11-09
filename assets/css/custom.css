@@ -201,17 +201,40 @@ html body .list__term-heading {
     border-bottom: .125rem solid #e4e4e4;
     color: #97e2ef;
     text-transform: uppercase;
-    font-family: Skolar-Sans-Regular, Helvetica, Roboto, Arial, sans-serif
+    font-family: Skolar-Sans-Regular, Helvetica, Roboto, Arial, sans-serif;
 }
 .taglist .taglist__tag,
 .taglist a,
 .taglist--bold,
 .taglist-view-toggle {
-    font-family: Skolar-Sans-Semibold, Helvetica, Roboto, Arial, sans-serif
+    font-family: Skolar-Sans-Semibold, Helvetica, Roboto, Arial, sans-serif;
 }
 
 
 /* NAVIGATION */
 .top-bar-section ul li>a{
     font-family: Skolar-Sans-Regular,Helvetica,Roboto,Arial,sans-serif;
+}
+
+
+/* ROYGBIV */
+#nav-brain{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-right: 0px;
+    position: relative;
+}
+#header_n_label {
+    float: left;
+    left: 0px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+#nav_label {
+    background-color: #ffffff;
+    opacity: 0.5;
+    padding: 10px;
+    text-align: left;
 }
