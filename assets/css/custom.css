@@ -225,6 +225,15 @@ html body .list__term-heading {
     color: white !important;
 }
 
+/* TITLE */
+#big-title{
+    font-size: 3rem;
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
 
 /* ROYGBIV */
 #masthead{
