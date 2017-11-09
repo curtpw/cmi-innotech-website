@@ -216,8 +216,8 @@ html body .list__term-heading {
     font-family: "Skolar-Sans-Regular", Helvetica,Roboto,Arial,sans-serif;
 }
 .top-bar{
-    background-image: url("https://curtpw.github.io/cmi-innotech-website/assets/img/cmi_nav_background.png");
-    background-repeat: repeat-x;
+    background: url("https://curtpw.github.io/cmi-innotech-website/assets/img/cmi_nav_background.png") center repeat-x;
+    background-size: auto 100%;
 }
 
 .top-bar-section li, .top-bar-section li a, .top-bar-section ul{
@@ -230,13 +230,43 @@ html body .list__term-heading {
     text-decoration: underline !important;
 }
 
+
+.top-bar-section li a {
+    position: relative;
+    display: block;
+    margin-right: 1.618em;
+    padding: 15px 0 15px;
+    height: 60px;
+}
+.top-bar-section li a:before,
+.top-bar-section li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s
+}
+.top-bar-section li a:before {
+    width: 100%;
+    background: transparent
+}
+.top-bar-section li a:after {
+    width: 0;
+    background: #000
+}
+
+
 /* TITLE */
 #big-title{
     z-index: 3;
     text-align: center;
     width: 100%;
     font-size: 10rem;
-    position: fixed;
+    position: absolute;
     margin-top: 18%;
     font-family: "Skolar-Regular", Georgia,Cambria,"Times New Roman",Times,serif;
 }
@@ -247,7 +277,7 @@ html body .list__term-heading {
     height: 100%;
 }
 #nav-brain{
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     height: 780px;
     max-width: 1100px;
