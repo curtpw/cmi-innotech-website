@@ -1,3 +1,25 @@
+
+<!-- ARNO'S ROYGBIV IS MAST -->
+
+		<script src="assets/js/roygbiv/libs/three.min.js"></script>
+		<script src="assets/js/roygbiv/libs/Projector.js"></script>
+		<script src="assets/js/roygbiv/libs/Detector.js"></script>
+		<script src="assets/js/roygbiv/libs/TrackballControls.js"></script>
+		<script src="assets/js/roygbiv/libs/VTKLoader.js"></script>
+		<!--<script src="js/libs/Detector.js"></script>
+		<script src="js/libs/stats.min.js"></script>-->
+		<script src="assets/js/roygbiv/libs/jquery.min.js"></script>
+		<script src="assets/js/roygbiv/libs/d3.min.js"></script>
+        <script src="assets/js/roygbiv/libs/box.js"></script>
+        <script src="assets/js/roygbiv/libs/sprintf.js"></script>
+		<script src="assets/js/roygbiv/libs/angular.min.js"></script>
+
+        <script src="assets/js/roygbiv/brain.utils.js"></script>
+        <script src="assets/js/roygbiv/brain.js"></script>
+		<script src="assets/js/roygbiv/boxplot.js"></script>
+		<script src="assets/js/roygbiv/underscore-min.js"></script>
+
+
 {% if page.header == NULL and page.header.image_fullwidth == NULL and page.header.pattern == NULL and page.header.background-color == NULL and page.header.title == NULL %}
 
 <div id="masthead-no-image-header">
@@ -48,8 +70,56 @@
 
 {% elsif page.header.image_fullwidth %}
 
-<div id="masthead">
+<div id="masthead" class="ROYGBIV">
 	<div class="row">
+
+<!-- CRUDE INSERT OF ROYGBIV -->
+		<div ng-app="navigator" ng-controller="NavigateController" ng-strict-di>
+
+			<div id="header_n_label">
+				
+				<h1>ROYGBIV</h1>
+				<div id="nav_label">
+					Shift+click on a label to see stats
+					<br />
+					<br />
+					Selected Label: {{selectedLabel}}
+				</div>
+		<!--		<div id="plot-canvas" style="width: 400px; height: 300px;"> </div> -->
+			</div>
+
+			<div id="nav-brain" style="width: 100%; height: 900px; margin-top: 50px; margin-right: 50px;"></div>
+
+		</div>
+
+		<script>
+			angular.module('navigator', [])
+			.controller('NavigateController', ['$scope', function($scope) {
+                $scope.brain = new Brain({
+                    divID: "nav-brain",  // div to render brain
+                    callback: function(mesh) {
+                        // callback when a mesh is selected/deselected
+                        if (!mesh) {
+                            // deselected: clear label & plot
+                            $scope.selectedLabel = "";
+                          //  $('#plot-canvas').empty();
+                        } else {
+                            // selected: add label, do plot.
+                            $scope.selectedLabel = mesh.name;
+                          //  do_boxplot("plot-canvas", mesh);
+                        }
+                        $scope.$apply();
+                    },
+                    manifest_url: 'assets/data/lh_files_to_load.json',
+                    label_mapper: "assets/data/labels.json"
+                });
+			}]);
+		</script>
+
+
+
+
+
 		<div class="small-12 columns">
 			<a id="logo" href="{{ '/' | absolute_url }}" title="{{ site.title }} – {{ site.slogan }}">
 				<img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.logo }}" alt="{{ site.title }} – {{ site.slogan }}">
