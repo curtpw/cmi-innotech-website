@@ -207,31 +207,33 @@ html body .list__term-heading {
 .taglist a,
 .taglist--bold,
 .taglist-view-toggle {
-    font-family: Skolar-Sans-Semibold, Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Skolar-Sans-Semibold", Helvetica, Roboto, Arial, sans-serif;
 }
 
 
 /* NAVIGATION */
 .top-bar-section ul li>a{
-    font-family: Skolar-Sans-Regular,Helvetica,Roboto,Arial,sans-serif;
+    font-family: "Skolar-Sans-Regular", Helvetica,Roboto,Arial,sans-serif;
 }
 .top-bar{
     background-image: url("https://curtpw.github.io/cmi-innotech-website/assets/img/cmi_nav_background.png");
     background-repeat: repeat-x;
 }
 
-.top-bar-section li, .top-bar-section ul{
+.top-bar-section li, .top-bar-section li a, .top-bar-section ul{
+    background: none !important;
     background-color: none !important;
     color: white !important;
 }
 
 /* TITLE */
 #big-title{
-    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    font-size: 10rem;
     position: fixed;
-    margin-top: 30%;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-top: 22%;
+    font-family: "Skolar-Regular", Georgia,Cambria,"Times New Roman",Times,serif;
 }
 
 
@@ -256,9 +258,10 @@ html body .list__term-heading {
 }
 #nav_label {
     background-color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.2;
     padding: 10px;
     text-align: left;
+    font-size: 1.5rem;
 }
 #ng-app-navigator{
     position: absolute;

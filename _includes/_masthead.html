@@ -79,13 +79,7 @@
 			<div id="ng-app-navigator" ng-app="navigator" ng-controller="NavigateController" ng-strict-di>
 
 		<!--	<div id="header_n_label"> -->
-				<div id="nav_label">
-					ROYGBIV
-					<br/>
-					Shift+click on a label to see stats
-					<br/>
-					Selected Label: {{selectedLabel}}
-				</div>
+				<div id="nav_label"></div>
 			<!--	<div id="plot-canvas" style="width: 0px; height: 0px;"> </div> -->
 		<!--	</div>  -->
 
@@ -111,7 +105,8 @@
                             	/* selected: add label, do plot. */
                             $scope.selectedLabel = mesh.name;
                             console.log("label in angular module: " + mesh.name);
-                          	do_boxplot("plot-canvas", mesh); 
+                            $("#nav_label").html(mesh.name);
+                         // 	do_boxplot("plot-canvas", mesh); 
                         }
                         $scope.$apply();
                     },
