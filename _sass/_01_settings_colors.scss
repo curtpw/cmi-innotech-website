@@ -26,12 +26,21 @@ $body-bg: 			#fdfdfd;
    https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
 ------------------------------------------------------------------- */
 
+$ci-1: #0067a0;		// dark turquoise
+$ci-2: #090e3c;		// turquoise
+$ci-3: #f9e28a;		// yellow
+$ci-4: #f2cd32;		// orange
+$ci-5: #ea234b;		// red
+$ci-6: #4db789;     // green
+
+/* BACKUP
 $ci-1: #334D5C;		// dark turquoise
 $ci-2: #45B29D;		// turquoise
 $ci-3: #EFC94C;		// yellow
 $ci-4: #E27A3F;		// orange
 $ci-5: #DF4949;		// red
 $ci-6: #A1D044;     // green
+*/
 
 
 
@@ -44,6 +53,28 @@ $alert-color: $ci-5;
 $success-color: $ci-6;
 $warning-color: $ci-4;
 $info-color: $ci-1;
+
+/* FROM CHILDMIND
+    black: #000000,
+    charcoal: #404341,
+    scribble: #7a807c,
+    silver: #b0b3b1,
+    friendly-ghost: #e4e4e4,
+    white: #ffffff,
+
+    navy: #090e3c,
+    ocean: #242a6a,
+    cmi-blue: #0067a0,
+    peacock: #00c1d5,
+    baby-peacock: #97e2ef,
+    teal: #4db789,
+    light-teal: #90d9b9,
+    bright-red: #ea234b,
+    deep-red: #a31c3f,
+    clementine: #eeae30,
+    bright-yellow: #f2cd32,
+    light-yellow: #f9e28a
+    */
 
 
 
