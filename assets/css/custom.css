@@ -226,9 +226,6 @@ html body .list__term-heading {
     color: white !important;
     text-decoration: none;
 }
-.top-bar-section li a:hover{
-    text-decoration: underline !important;
-}
 
 
 .top-bar-section li a {
@@ -236,7 +233,9 @@ html body .list__term-heading {
     display: block;
     margin-right: 1.618em;
     padding: 15px 0 15px;
-    height: 60px;
+    height: 64px;
+    line-height: 2.3rem !important;
+    margin-top: 0.5rem !important;
 }
 .top-bar-section li a:before, .top-bar-section li a:after {
     content: '';
