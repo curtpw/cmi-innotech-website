@@ -220,7 +220,8 @@ html body .list__term-heading {
 /* ROYGBIV */
 #nav-brain{
     width: 100%;
-    height: auto;
+    height: 900px;
+    max-width: 1200px;
     margin-top: 0px;
     margin-right: 0px;
     position: relative;
@@ -237,4 +238,7 @@ html body .list__term-heading {
     opacity: 0.5;
     padding: 10px;
     text-align: left;
+}
+#ng-app-navigator{
+    position: absolute;
 }
