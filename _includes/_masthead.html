@@ -97,17 +97,17 @@
 			angular.module('navigator', [])
 			.controller('NavigateController', ['$scope', function($scope) {
                 $scope.brain = new Brain({
-                    divID: "nav-brain",  // div to render brain
+                    divID: "nav-brain",  		/* div to render brain */
                     callback: function(mesh) {
-                        // callback when a mesh is selected/deselected
+                        		/* callback when a mesh is selected/deselected */
                         if (!mesh) {
-                            // deselected: clear label & plot
+                            	/* deselected: clear label & plot */
                             $scope.selectedLabel = "";
-                          //  $('#plot-canvas').empty();
+                          		/*  $('#plot-canvas').empty(); */
                         } else {
-                            // selected: add label, do plot.
+                            	/* selected: add label, do plot. */
                             $scope.selectedLabel = mesh.name;
-                          //  do_boxplot("plot-canvas", mesh);
+                          		/*  do_boxplot("plot-canvas", mesh); */
                         }
                         $scope.$apply();
                     },
