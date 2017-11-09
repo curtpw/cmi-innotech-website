@@ -224,6 +224,10 @@ html body .list__term-heading {
     background: none !important;
     background-color: none !important;
     color: white !important;
+    text-decoration: none;
+}
+.top-bar-section li a:hover{
+    text-decoration: underline !important;
 }
 
 /* TITLE */
