@@ -16,7 +16,7 @@ widget2:
   title: "Title Lorem Ipsum"
   url: 'https://childmind.org'
   text: 'Lorem ipsum dolor sit amet heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="https://childmind.org">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="https://curtpw.github.io/cmi-innotech-website/images/salamander-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "Title Lorem Ipsum"
   url: 'https://childmind.org'
@@ -34,7 +34,7 @@ widget3:
 #
 callforaction:
   url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
+  text: Join Announcements and News Email List ›
   style: alert
 permalink: /index.html
 #

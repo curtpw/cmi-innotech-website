@@ -14,7 +14,7 @@ title: 'CMI Innovation and Technology'
 slogan: 'CMI Innovation and Technology'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»Feeling Responsive« is a responsive theme for Jekyll based on the fabulous foundation framework with beautiful typography and a bright color palette.'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacus justo ...'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
 credits: '<p>Created by <a href="https://github.com/curtpw">Curt White</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.</p>'
@@ -192,8 +192,8 @@ og_type:                            'website'
 #
 
 socialmedia:
-    twitter: phlow
-    facebook: phlow.media
+    twitter: Lorem
+    facebook: lorem.ipsum
 
 
 #        ____  _
@@ -205,7 +205,7 @@ socialmedia:
 #
 # used in _includes/comments
 
-disqus_shortname: feelingresponsive
+disqus_shortname: loremipsum
 
 
 #      _____
@@ -229,7 +229,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-google_analytics_tracking_id: UA-60112281-1
+google_analytics_tracking_id: UA-XXXXXXXX-1
 
 
 
