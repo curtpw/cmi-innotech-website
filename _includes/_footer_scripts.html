@@ -13,6 +13,11 @@ $('audio,video').mediaelementplayer();
     $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
     $("#masthead-with-text").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
 </script>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
 {% endif %}
 
 
