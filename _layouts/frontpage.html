@@ -15,7 +15,8 @@ format: frontpage
 * First check, if widget is empty or not by checking if there is a title
 *
 {% endcomment %}
-<div id="below-splash" class="below-splash row t60">
+<div  class="row t60">
+    <div id="below-splash" class="below-splash"></div>
 	{% if page.widget1.title %}
 		{% include _frontpage-widget.html widget=page.widget1 %}
 	{% endif %}
