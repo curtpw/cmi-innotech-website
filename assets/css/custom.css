@@ -273,7 +273,7 @@ html body .list__term-heading {
 }
 
 /* OTHER SPLASH */
-div.splash-scroll-down{
+a.splash-scroll-down{
     width: auto;
     height: auto;
     display: inline-block;
@@ -281,7 +281,7 @@ div.splash-scroll-down{
     float: center;
 }
 
-div.splash-scroll-down div{
+a.splash-scroll-down div{
     background: url("https://curtpw.github.io/cmi-innotech-website/assets/img/down_arrow_icon.png") center;
     background-size: 100% 100%;
     width: 10%;
