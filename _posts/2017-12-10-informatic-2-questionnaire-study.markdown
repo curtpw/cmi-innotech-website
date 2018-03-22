@@ -2,7 +2,7 @@
 title: Questionnaires study
 subtitle: to select informative questions
 layout: project
-modal-id: questionnaire-study
+modal-id: questionnaire
 categories: [project, informatics, database, study]
 tags: questionnaire
 date: 2017-12-01
