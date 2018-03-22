@@ -1,0 +1,105 @@
+---
+title: How to Upload Questionnaires
+subtitle: to Mindlogger from a spreadsheet
+layout: update
+modal-id: Mindlogger-csv2json
+categories: [template]
+date: 2018-01-25
+created-by: [jon-clucas]
+updated:
+  latest:
+    by: [jon-clucas]
+    date: 2018-02-23
+permalink: Mindlogger/csv2json.html
+redirect_from:
+  - ab2cd/csv2json.html
+  - mindlogger/csv2json.html
+people: [jon-clucas, arno-klein, erik-ilyan, stephanie-samar, anirudh-krishnakumar]
+projects: [Mindlogger]
+glyph: app.png
+---
+
+<noscript>
+  You need to enable JavaScript to run this app.
+</noscript>
+<div id="body-below-nav">
+  <div id="root"></div>
+  <div id="template">
+    <div class="instructions">
+      <a href="http://matter.childmind.org/Mindlogger.html">Mindlogger</a> allows for the creation of surveys within the app. If you'd rather use a spreadsheet than the app itself to create a survey for the <a href="http://matter.childmind.org/Mindlogger.html">Mindlogger</a> app, this page is for you.
+      <h4>How to use this page</h4>
+      This webapp converts one or more CSV files from <a href="https://docs.google.com/spreadsheets/d/1n2sCMyIHYyKwb1iub35kSObdrhRMLCkOdjxELC_WD5Q/export?gid=1911345128&format=csv">our template spreadsheet</a> into a format usable by <a href="http://matter.childmind.org/Mindlogger.html">Mindlogger</a>.<br>CSV is a plain-text single-page spreadsheet format compatible with all major spreadsheet applications, including Microsoft Excel, Google Sheets and OpenOffice.org Calc. These applications can open and save CSV format files.<br>You can include one or more questionnaires in a CSV file, and you can load one or more CSV files at a time into the app. Don't split a questionnaire across CSV files.<br><a href="https://docs.google.com/spreadsheets/d/1n2sCMyIHYyKwb1iub35kSObdrhRMLCkOdjxELC_WD5Q/export?gid=1911345128&format=csv">Our template spreadsheet</a> includes the example entry used in these instructions. The 7 columns in <a href="https://docs.google.com/spreadsheets/d/1n2sCMyIHYyKwb1iub35kSObdrhRMLCkOdjxELC_WD5Q/export?gid=1911345128&format=csv">our template spreadsheet</a> are described here, with <code>examples</code> in <span style="color:#c7254e" title="#c7254e">Old Rose</span> text with <span style="background-color:#f9f2f4;padding:2px 4px;" title="#f9f2f4">Lavender Blush</span> backgrounds:
+      <h5>1. Questionnaire Name</h5>
+      Full, human-readable name of a questionnaire: <code>Physical Activity Questionnaire for Adolescents</code>. Repeat for each question in the questionnaire.
+      <h5>2. Questionnaire ID</h5>
+      Abbreviated name for questionnaire: <code>PAQ-A</code>. Repeat for each question in the questionnaire.
+      <h5>3. Question Group Instruction</h5>
+      (optional) If a group of questions share a common opening instruction, the text instruction to precede each question in the current question group: <pre class="match-inline-code"><code>Physical activity in your spare time. Have you done any of the following activities in the past 7 days (last week)? If yes, how many times? (Mark only one circle per row)</code></pre> Repeat for each question that shares this instruction.
+      <h5>4. Question</h5>
+      Text instruction or question: <code>Walking for exercise</code>.
+      <h5>5. Question ID</h5>
+      (optional) Abbreviation for a specific question: <code>PAQ_A_01e</code>.
+      <h5>6. Response Type</h5>
+      One of the following:
+      <ul>
+        <li><code>Single Choice</code>: for choosing a single response.</li>
+        <li><code>Multiple Choice</code>: for choosing zero or more responses.</li>
+        <li><code>Text Entry</code>: for entering free text, including entering numbers.</li>
+      </ul>
+      <h5>7. Response Options</h5>
+      <div id="response_options_step_by_step" style="display:none;">
+        <ol>
+          <li>Click into the cell in the relevant row for the question for which you are entering response options.</li>
+          <li>Type the value to store if the user chooses the first option: <code>1</code> if the user chooses <code>No</code>.</li>
+          <li>Type <code style="font-size:large">=</code> (equals sign).</li>
+          <li>Type the response option the user will see: <code>No</code>.</li>
+          <li><ol type="A" style="margin-left:-1.5em">
+            <li>Press <code class="keystroke">[Alt]+[Enter]</code> in Excel, or press <code class="keystroke">[Ctrl]+[Enter]</code> in Google Sheets or OpenOffice.</li>
+            <b>OR</b>
+            <li>Type <code>|||</code> (3 pipes &mdash; the <code class="keystroke">[|]</code> key is usually <code class="keystroke">[Shift]+[\]</code>)</li>
+          </ol></li>
+          <li>Repeat steps 1&ndash;5 for each additional response option.</li>
+        </ol>
+      </div>
+      <div>
+        <button id="response_options_show_hide" onclick="show_hide_div_button(
+          'response_options_step_by_step',
+          'response_options_show_hide',
+          'Click here for step-by-step instructions for this column',
+          'Hide step-by-step instructions'
+          )">Click here for step-by-step instructions for this column</button>
+      </div>
+      If <code>Response Type</code> is <code>Single Choice</code> or <code>Multiple Choice</code>, enter the options to choose from. <b>Within a single cell</b>, values and labels are connected with <code style="font-size:large">=</code> and separated with <code>newline</code>s <b>or</b> <code>|||</code> (3 pipes): <pre class="match-inline-code"><code>1=No
+2=1-2
+3=3-4
+4=5-6
+5=7 or more times</code></pre>
+      <b>A user will only see the options entered on the right hand side of the equals sign.</b> In the example above, the user would be able to choose one option from <code>No</code>, <code>1-2</code>, <code>3-4</code>, <code>5-6</code>, <code>7 or more times</code> in response to <pre class="match-inline-code"><code>Physical activity in your spare time. Have you done any of the following activities in the past 7 days (last week)? If yes, how many times? (Mark only one circle per row): Walking for exercise</code></pre>
+      The value saved for the chosen response goes on the left hand side of each equals sign. Each value can be a number (which can be useful for scoring) or any text. In the example above, a response of <code>No</code> would save a value of <code>1</code>, and a response of <code>7 or more times</code> would save a value of <code>5</code>.<br>
+      To enter newlines in a cell, press <code class="keystroke">[Alt]+[Enter]</code> in Excel or <code class="keystroke">[Ctrl]+[Enter]</code> in Google Sheets or OpenOffice.
+      <div style="padding-top:0.75ex"><b><ul>
+        <li>Enter the questions in the order you want them to appear in the app.</li>
+        <li>Make sure to save your spreadsheet file(s) in CSV format.</li>
+      </ul></b></div>
+    </div>
+  </div>
+  <hr>
+  <h4>What you get from this app</h4>
+  Click the button below to select one or more CSV files to convert. If the conversion succeeds, links to download the converted files will appear.
+  <div class="file_selector">
+  <div id="json_out"></div>
+  <input type="file" id="your-files-selector" multiple>
+  </div>
+  <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+</div>
+<script src="{{ "/js/papaparse.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/Mindlogger_csv2json.js" | prepend: site.baseurl }}"></script>

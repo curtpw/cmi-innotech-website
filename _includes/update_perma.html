@@ -1,0 +1,61 @@
+    <div class="project-modal perma-content" id="{{ page.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content" style="padding:0">
+          <a href="{{ site.url }}{{ site.baseurl }}">
+          <div class="close-modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          </a>
+          <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body" style="margin-top:1ex">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <a href="{{ site.url }}{{ site.baseurl }}/{{- page.permalink -}}"><h2>{{- page.title -}}</h2>
+                            <h4>{{- page.subtitle -}}</h4>
+                          </a>
+                          <hr>
+                          <div class="row">
+                            <center>
+                              <div class=lass="flexBox" style="display:flex;flex-flow:row wrap;justify-content:center;">
+                              {% assign cats = "device, app, informatics, voice" | split: ", " %}
+                              {%- for category in cats -%}
+                                {%- for project in site.categories.project -%}
+                                  {%- for update_project in page.projects -%}
+                                    {%- if (update_project == project.modal-id) and (project.categories contains category) -%}
+                                      <div class="col-xs-4 glyphs" style="width:45px;padding:0;">
+                                        <a href="{{ site.url }}{{ site.baseurl }}{{ project.permalink }}">
+                                          <img src="{{ site.url }}{{ site.baseurl }}/assets/img/glyphs/{{- project.glyph -}}" alt="{{- project.title -}}" title="{{- project.title -}}"/>
+                                        </a>
+                                      </div>
+                                    {%- endif -%}
+                                  {%- endfor -%}
+                                {%- endfor -%}
+                              {%- endfor -%}
+                              {%- for people in page.people -%}
+                                {%- for person in site.categories.person -%}
+                                  {%- if person.modal-id == people -%}
+                                  <div class="col-xs-4 glyphs" style="width:45px;padding:0;">
+                                    <a href="{{ site.url }}{{ site.baseurl }}{{ person.permalink }}">
+                                      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/people/{{- person.thumbnail -}}" alt="{{- person.name -}}" title="{{- person.name -}}"/>
+                                    </a>
+                                  </div>
+                                  {%- endif -%}
+                                {%- endfor -%}
+                              {%- endfor -%}
+                              </div>
+                            </center>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <hr>
+                        {{ page.content }}
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>

@@ -1,0 +1,54 @@
+---
+title: Mindlogger
+subtitle: Data Collection App
+layout: project
+modal-id: Mindlogger
+old-modal-ids: [ab2cd]
+categories: [project, app]
+date: 2017-12-01
+img: Mindlogger.jpg
+thumbnail: Mindlogger-thumbnail.jpg
+alt: "Mindlogger app"
+description:  Want to collect data from yourself or others using an app but don’t want to do any programming?  This app enables you to build a variety of different types of surveys, as well as voice and drawing/tapping tasks.  The intended user will receive notifications to take only the surveys and tasks that you have built using the app.  We are currently building a sophisticated set of administrative controls to enable anyone to tailor the app for their own use to collect data and store and access the data where they please.
+permalink: /Mindlogger.html
+redirect_from:
+  - /ab2cd.html
+  - /mindlogger.html
+people: [arno-klein, erik-ilyan, jon-clucas, anirudh-krishnakumar]
+glyph: app.png
+updated:
+  latest:
+    by: [jon-clucas]
+    date: 2018-02-15
+---
+
+We are developing an end-to-end open source data collection platform called Mindlogger that can be configured 
+to administer a wide range of assessment tools across different platforms, such as phones and tablets of 
+different operating systems. The Mindlogger platform consists of a cross-platform app, secure online 
+administrative panel, and online dashboard. The app consists of a modular set of activities that can be tailored 
+in their selection, content, and (text and audio) instructions for a given set of users. 
+Timed notifications remind a user to perform each activity, and the user has the opportunity to redo any activity. 
+All data are stored in a backend database.
+An administrator can view the data for each activity in the dashboard, and can customize which activities are 
+on/off for a given user through the administrative panel.
+
+Activities in the current prototype include:
+  - Surveys. Users can fill out either a sequential or accordian-style survey in basic or table format:
+    - single selection
+    - multiple choice
+    - integer increment/decrement
+    - free text entry
+    - image selection
+  - Audio recording. Users can record a voice sample, with an option to play back the sample.
+  - Drawing/tapping. Users can be instructed to draw a picture on the touchscreen, optionally atop an image, and the timestamp will be saved for every coordinate, enabling calculations of reaction times, delay times, task completion times, as well as a means of recording timing and errors in sequential operations. 
+
+The Mindlogger dashboard allows a user with the right permissions to view responses to individual items.
+Once an activity such as a survey instrument is filled out, reviewed, and submitted from the app, 
+the data are immediately viewable in timeline and list views on the online dashboard and individual response 
+items are viewable upon selecting individual activities. Data can be stored on any server if set up appropriately. 
+We have our data stored in Amazon Web Services according to HIPAA-compliant standards. 
+The responses can be downloaded as well in different formats by a user with the correct permissions. 
+
+To load a questionnaire from a spreadsheet into the app, please use [our template](http://matter.childmind.org/Mindlogger/csv2json.html).
+
+{% include app_related.md %}
