@@ -18,7 +18,7 @@
         <div class="row">
             {% for post in site.categories.team %}
             <div class="col-md-4 col-sm-6 project-item person">
-                <a href="#{{ post.modal-id }}" id="{{ post.modal-id }}-team" class="project-link" data-toggle="modal">
+                <a href="{{ site.baseurl }}/{{ post.modal-id }}" id="{{ post.modal-id }}-team" class="project-link" data-toggle="modal">
                     <img src="assets/img/people/{{ post.thumbnail }}" class="img-responsive img-centered img-circle" alt="">
                 </a>
                 <div class="project-caption text-center">

@@ -18,7 +18,7 @@
             <div class="row">
                 {% for post in site.categories.informatics %}
                 <div class="col-md-4 col-sm-6 project-item">
-                    <a href="#{{ post.modal-id }}" id="{{ post.modal-id }}-informatics" class="project-link" data-toggle="modal">
+                    <a href="{{ site.baseurl }}/{{ post.modal-id }}" id="{{ post.modal-id }}-informatics" class="project-link" data-toggle="modal">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -27,7 +27,7 @@
                         <img src="assets/img/projects/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                     </a>
                     <div class="project-caption">
-                        <a href="#{{ post.modal-id }}" id="{{ post.modal-id }}-device" class="project-link" data-toggle="modal"><h4>{{ post.title }}</h4></a>
+                        <a href="{{ site.baseurl }}/{{ post.modal-id }}" id="{{ post.modal-id }}-device" class="project-link" data-toggle="modal"><h4>{{ post.title }}</h4></a>
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>

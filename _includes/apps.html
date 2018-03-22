@@ -16,7 +16,7 @@
             <div class="row">
                 {% for post in site.categories.app %}
                 {% for old-modal-id in post.old-modal-ids %}
-                  <a href="#{{ post.modal-id }}" id="{{ old-modal-id }}" class="old-modal" data-toggle="modal"></a>
+                  <a href="{{ site.baseurl }}/{{ post.modal-id }}" id="{{ old-modal-id }}" class="old-modal" data-toggle="modal"></a>
                 {% endfor %}
                 <div class="col-md-4 col-sm-6 project-item">
                     <a href="#{{ post.modal-id }}" id="{{ post.modal-id }}-app" class="project-link" data-toggle="modal">
@@ -28,7 +28,7 @@
                         <img src="assets/img/projects/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                     </a>
                     <div class="project-caption">
-                        <a href="#{{ post.modal-id }}" id="{{ post.modal-id }}-device" class="project-link" data-toggle="modal"><h4>{{ post.title }}</h4></a>
+                        <a href="{{ site.baseurl }}/{{ post.modal-id }}" id="{{ post.modal-id }}-device" class="project-link" data-toggle="modal"><h4>{{ post.title }}</h4></a>
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
