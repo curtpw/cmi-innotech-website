@@ -22,4 +22,5 @@ as it is lightweight and non-intrusive.  See the description of the
 [Tingle](http://matter.childmind.org/tingle.html) device,
 which also serves to track position of the hand with respect to the head and torso,
 but for a more narrow application (monitoring of body-focused repetitive behaviors). 
-<iframe width="600" height="450" src="https://sketchfab.com/models/4f452eee264b4a8c8ce7055b76694938/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> 
+<iframe width="600" height="450" src="https://sketchfab.com/models/4f452eee264b4a8c8ce7055b76694938/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> 
+The above 3D model represents the top half of the Thermo device enclosure. By 3D printing the enclosure, we are able to precisely orient the sensors mounted inside. The holes in the model correspond to individual sensors - 26 in total. The device also makes use of an accelerometer mounted on the main PCB (circuit board) in the bottom half of the enclosure.
