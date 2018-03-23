@@ -1,7 +1,7 @@
 ---
 name: Curt White
 nick: Curt
-position: Wearable Device Developer
+position: Device Developer
 position2: Web Developer
 title1: Device Developer
 title2: Web Developer

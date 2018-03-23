@@ -22,3 +22,4 @@ as it is lightweight and non-intrusive.  See the description of the
 [Tingle](http://matter.childmind.org/tingle.html) device,
 which also serves to track position of the hand with respect to the head and torso,
 but for a more narrow application (monitoring of body-focused repetitive behaviors). 
+<iframe width="600" height="450" src="https://sketchfab.com/models/4f452eee264b4a8c8ce7055b76694938/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> 
