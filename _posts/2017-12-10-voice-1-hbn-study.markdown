@@ -12,7 +12,7 @@ description: We are collecting voice data as part of the 10,000-participant Heal
 description-full:
 publication: [An open resource for transdiagnostic research in pediatric mental health and learning disorders]
 publication-url: https://dx.doi.org/10.1038/sdata.2017.181
-permalink: /hbn-voice.html
+permalink: /hbn-voice-data.html
 people: [lindsay-alexander, jasmine-escalera, lei-ai, charissa-andreotti, karina-febre, alex-mangone, natan-vegapotler, nicolas-langer, alexis-alexander, meagan-kovacs, shannon-litke, bridget-ohagan, jennifer-andersen, batya-bronstein, anastasia-bui, marijayne-bushey, henry-butler, victoria
 castagna, nicolas-camacho, elisha-chan, danielle-citera, jon-clucas, samantha-cohen, sarah-dufek, megan-eaves, brian-fradera, judith-gardner, natalie-grantvillegas, gabriella-green, camille-gregory, emily-hart, megan-horton, shana-harris, catherine-lord, danielle-kahn, katherine-kabotyanski, bernard-karmel, simon-kelly, kayla-kleinman, bonhwang-koo, eliza-kramer, elizabeth-lennon, ginny-mantello, amy-margolis, kathleen-merikangas, judith-milham, giuseppe-minniti, rebecca-neuhaus, alexandra-nussbaum, yael-osman, lucas-parra, ken-pugh, amy-racanello, anita-restrepo, tian-saltzman, batya-septimus, russ-tobe, rachel-waltz, anna-williams, anna-yeo, xavier-castellanos, arno-klein, tomas-paus, bennett-leventhal, cameron-craddock, harold-koplewicz, mike-milham]
 glyph: voice.png

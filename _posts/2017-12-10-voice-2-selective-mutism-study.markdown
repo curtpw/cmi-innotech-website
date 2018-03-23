@@ -9,7 +9,7 @@ img: sm-openSMILE.png
 thumbnail: sm-openSMILE-thumbnail.png
 alt: "Selective mutism study"
 description:  We are using voice features to detect and track different disorders related to anxiety and mood, such as selective mutism.
-permalink: /sm-voice.html
+permalink: /selective-mutism-study.html
 people: [helen-xu, jacob-stroud, renee-jovanovic, jon-clucas, jake-son, bonhwang-koo, juliet-schwartz, arno-klein, rachel-busman, mike-milham, curt-white]
 glyph: voice.png
 github:
