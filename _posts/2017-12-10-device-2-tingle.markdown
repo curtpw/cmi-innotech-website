@@ -64,6 +64,9 @@ the Tingle wearable device to facilitate diagnosis and therapy outside the clini
 In turn, this will facilitate the more rapid commercialization of this product to make it more widely available 
 to clinicians and their patients.
 
+<iframe width="600" height="450" src="https://sketchfab.com/models/dbd294b33d774da1a6e8cc02f70170cc/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+The above 3D model represents the top half of the Tingle device enclosure. By 3D printing the enclosure, we are able to precisely orient the sensors mounted inside. The holes in the model correspond to individual sensors, a button and an indicator LED.
+
 ## References
 - Conelea, Frank & Walther, 2017
 - Diefenbach GJ1, Mouton-Odum S, Stanley MA. (2002). Affective correlates of trichotillomania. *Behaviour Research and Therapy*, *40*(11). 2002 Nov;40(11):1305-15. <a href="https://dx.doi.org/10.1016/S0005-7967(02)00006-2">doi:10.1016/S0005-7967(02)00006-2</a>
