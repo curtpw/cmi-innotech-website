@@ -1,0 +1,16 @@
+- title: LAB
+  url: "/"
+  side: left
+
+- title: Team
+  url: "/team/"
+  side: right
+
+- title: Projects
+  url: "/projects/"
+  side: right
+
+- title: Publications
+  url: "/publications/"
+  side: right
+

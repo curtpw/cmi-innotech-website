@@ -1,0 +1,195 @@
+{
+    "colors": {
+        "1002": [
+            "0.7586206896551724",
+            "0.20689655172413793",
+            "0.0"
+        ],
+        "1003": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "1005": [
+            "0.3448275862068966",
+            "0.3103448275862069",
+            "0.034482758620689655"
+        ],
+        "1006": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "1007": [
+            "1.0",
+            "0.6896551724137931",
+            "0.48275862068965514"
+        ],
+        "1008": [
+            "0.034482758620689655",
+            "0.24137931034482757",
+            "0.5862068965517241"
+        ],
+        "1009": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "1010": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "1011": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "1012": [
+            "0.6206896551724138",
+            "0.06896551724137931",
+            "1.0"
+        ],
+        "1013": [
+            "0.6206896551724138",
+            "0.48275862068965514",
+            "0.3448275862068966"
+        ],
+        "1014": [
+            "0.0",
+            "0.3103448275862069",
+            "0.24137931034482757"
+        ],
+        "1015": [
+            "0.6206896551724138",
+            "0.6551724137931034",
+            "1.0"
+        ],
+        "1016": [
+            "0.48275862068965514",
+            "0.4482758620689655",
+            "0.48275862068965514"
+        ],
+        "1017": [
+            "0.7241379310344828",
+            "1.0",
+            "0.10344827586206896"
+        ],
+        "1018": [
+            "0.0",
+            "0.8620689655172413",
+            "0.7931034482758621"
+        ],
+        "1019": [
+            "0.5172413793103449",
+            "0.8275862068965517",
+            "1.0"
+        ],
+        "1020": [
+            "0.4482758620689655",
+            "0.034482758620689655",
+            "0.24137931034482757"
+        ],
+        "1021": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "1022": [
+            "1.0",
+            "0.9310344827586207",
+            "0.5862068965517241"
+        ],
+        "1023": [
+            "0.5172413793103449",
+            "0.5862068965517241",
+            "0.5172413793103449"
+        ],
+        "1024": [
+            "0.10344827586206896",
+            "0.896551724137931",
+            "0.3793103448275862"
+        ],
+        "1025": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "1026": [
+            "0.9310344827586207",
+            "0.7931034482758621",
+            "1.0"
+        ],
+        "1027": [
+            "0.7586206896551724",
+            "0.0",
+            "0.5172413793103449"
+        ],
+        "1028": [
+            "0.3448275862068966",
+            "0.3793103448275862",
+            "0.3448275862068966"
+        ],
+        "1029": [
+            "0.0",
+            "0.5517241379310345",
+            "0.5172413793103449"
+        ],
+        "1030": [
+            "0.5172413793103449",
+            "0.6551724137931034",
+            "0.0"
+        ],
+        "1031": [
+            "0.27586206896551724",
+            "0.41379310344827586",
+            "1.0"
+        ],
+        "1034": [
+            "0.3793103448275862",
+            "0.27586206896551724",
+            "0.48275862068965514"
+        ],
+        "1035": [
+            "0.7931034482758621",
+            "0.9655172413793103",
+            "0.7931034482758621"
+        ]
+    },
+    "filename": {
+        "1003": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1003.vtk",
+        "1008": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1008.vtk",
+        "1009": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1009.vtk",
+        "1011": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1011.vtk",
+        "1012": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1012.vtk",
+        "1015": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1015.vtk",
+        "1018": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1018.vtk",
+        "1019": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1019.vtk",
+        "1020": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1020.vtk",
+        "1021": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1021.vtk",
+        "1022": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1022.vtk",
+        "1024": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1024.vtk",
+        "1027": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1027.vtk",
+        "1029": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1029.vtk",
+        "1030": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1030.vtk",
+        "1031": "mindboggled/Twins-2-1/labels/left_exploded_labels_vtks/freesurfer_curvature_1031.vtk"
+    },
+    "name": {
+        "1003": "ctx-lh-caudalmiddlefrontal",
+        "1008": "ctx-lh-inferiorparietal",
+        "1009": "ctx-lh-inferiortemporal",
+        "1011": "ctx-lh-lateraloccipital",
+        "1012": "ctx-lh-lateralorbitofrontal",
+        "1015": "ctx-lh-middletemporal",
+        "1019": "ctx-lh-parsorbitalis",
+        "1018": "ctx-lh-parsopercularis",
+        "1020": "ctx-lh-parstriangularis",
+        "1021": "ctx-lh-pericalcarine",
+        "1022": "ctx-lh-postcentral",
+        "1024": "ctx-lh-precentral",
+        "1027": "ctx-lh-rostralmiddlefrontal",
+        "1029": "ctx-lh-superiorparietal",
+        "1030": "ctx-lh-superiortemporal",
+        "1031": "ctx-lh-supramarginal"
+    }
+}
